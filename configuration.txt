@@ -1,0 +1,17 @@
+====================================================================================================
+PROJECT CVIANO
+    Sanguk Park(parksang1993@gmail.com), Hee Soo Kang(), Si Hyun Park()
+
+2018.07.04 (WED) all wrights reserved @KPP
+====================================================================================================
+
+using c++ build with ndk-build
+documents from webnautes.tistory.com/1054
+    "Android NDK + OpenCV 카메라 예제 및 프로젝트 생성방법 (ndk-build)"
+
+
+below are definition of the project path and other configurations that you have to know if you want
+to build or run this android-project.
+
+path of this project  C:\Code\vision\android
+path of OpenCV-android-sdk C:\Code\OpenCV-android-sdk
