@@ -1,12 +1,17 @@
 #include <jni.h>
-#include <string>
+#include <opencv2/opencv.hpp>
 
-extern "C" JNIEXPORT jstring
+using namespace cv;
 
-JNICALL
-Java_civiano_android_MainActivity_stringFromJNI(
-        JNIEnv *env,
-        jobject /* this */) {
-    std::string hello = "Hello from C++";
-    return env->NewStringUTF(hello.c_str());
+extern "C"
+JNIEXPORT void JNICALL
+Java_civiano_android_MainActivity_ConvertRGBtoGray(JNIEnv *env, jobject instance,
+                                                   jlong matAddrInput, jlong matAddrResult) {
+
+    Mat &matInput = *(Mat *)matAddrInput;
+    Mat &matResult = *(Mat *)matAddrResult;
+
+    cvtColor(matInput, matResult, CV_RGB2GRAY);
+    // TODO
+
 }

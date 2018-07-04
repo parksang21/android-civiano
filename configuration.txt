@@ -13,5 +13,12 @@ documents from webnautes.tistory.com/1054
 below are definition of the project path and other configurations that you have to know if you want
 to build or run this android-project.
 
+package "civiano.android"
+
 path of this project  C:\Code\vision\android
 path of OpenCV-android-sdk C:\Code\OpenCV-android-sdk
+
+below SDK tools are needed
+CMake
+NDK
+LLDB
